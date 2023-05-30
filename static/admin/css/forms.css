@@ -1,0 +1,281 @@
+form .aligned ul li {
+    display: list-item;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+/* BUTTONS */
+
+.form-row input.button,
+.form-row input.default {
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.form-row input.default {
+    margin-right: 5px;
+}
+
+.form-row input.submit {
+    padding: 0;
+}
+
+.form-row input[type="submit"],
+.form-row input[type="reset"],
+.form-row input[type="button"] {
+    padding: 3px 10px;
+    font-size: 0.8125rem;
+    line-height: 1;
+}
+
+.form-row button {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+    line-height: 1;
+}
+
+.form-row button.icon-only {
+    padding: 3px;
+}
+
+/* ERROR MESSAGES */
+
+.errorMsg {
+    font-size: 0.8125rem;
+    color: var(--error-fg);
+    padding-left: 0;
+}
+
+/* READONLY FIELDS */
+
+.form-row .readonly {
+    font-size: 0.8125rem;
+    padding-top: 6px;
+    color: var(--body-quiet-color);
+    line-height: 1.25;
+}
+
+/* HELP TEXT */
+
+.form-row p.help,
+.form-row div.help {
+    font-size: 0.8125rem;
+    margin-top: 4px;
+    color: var(--body-quiet-color);
+    line-height: 1.25;
+}
+
+/* HORIZONTAL FORMS */
+
+.horizontal div.form-row,
+.horizontal .form-row div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.horizontal div.form-row div {
+    padding-left: 10px;
+}
+
+.horizontal label {
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: top;
+    width: auto;
+}
+
+.horizontal label:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.625rem;
+}
+
+.horizontal .form-row .readonly {
+    padding-top: 4px;
+}
+
+.horizontal .form-row p.help,
+.horizontal .form-row div.help {
+    margin-top: 2px;
+}
+
+/* WIDE FORMS */
+
+.wide .form-row {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wide .aligned .form-row {
+    width: auto;
+}
+
+/* RESPONSIVE FORMS */
+
+@media only screen and (max-width: 767px) {
+    .responsive-form .form-row {
+        width: 100%;
+    }
+
+    .responsive-form .aligned .form-row {
+        width: auto;
+    }
+
+    .responsive-form label {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-form label:after {
+        content: none;
+    }
+
+    .responsive-form .form-row input[type="submit"],
+    .responsive-form .form-row input[type="reset"],
+    .responsive-form .form-row input[type="button"],
+    .responsive-form .form-row button {
+        width: 100%;
+    }
+}
+
+form .aligned ul li {
+    display: list-item;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+/* BUTTONS */
+
+.form-row input.button,
+.form-row input.default {
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.form-row input.default {
+    margin-right: 5px;
+}
+
+.form-row input.submit {
+    padding: 0;
+}
+
+.form-row input[type="submit"],
+.form-row input[type="reset"],
+.form-row input[type="button"] {
+    padding: 3px 10px;
+    font-size: 0.8125rem;
+    line-height: 1;
+}
+
+.form-row button {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+    line-height: 1;
+}
+
+.form-row button.icon-only {
+    padding: 3px;
+}
+
+/* ERROR MESSAGES */
+
+.errorMsg {
+    font-size: 0.8125rem;
+    color: var(--error-fg);
+    padding-left: 0;
+}
+
+/* READONLY FIELDS */
+
+.form-row .readonly {
+    font-size: 0.8125rem;
+    padding-top: 6px;
+    color: var(--body-quiet-color);
+    line-height: 1.25;
+}
+
+/* HELP TEXT */
+
+.form-row p.help,
+.form-row div.help {
+    font-size: 0.8125rem;
+    margin-top: 4px;
+    color: var(--body-quiet-color);
+    line-height: 1.25;
+}
+
+/* HORIZONTAL FORMS */
+
+.horizontal div.form-row,
+.horizontal .form-row div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.horizontal div.form-row div {
+    padding-left: 10px;
+}
+
+.horizontal label {
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: top;
+    width: auto;
+}
+
+.horizontal label:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.625rem;
+}
+
+.horizontal .form-row .readonly {
+    padding-top: 4px;
+}
+
+.horizontal .form-row p.help,
+.horizontal .form-row div.help {
+    margin-top: 2px;
+}
+
+/* WIDE FORMS */
+
+.wide .form-row {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wide .aligned .form-row {
+    width: auto;
+}
+
+/* RESPONSIVE FORMS */
+
+@media only screen and (max-width: 767px) {
+    .responsive-form .form-row {
+        width: 100%;
+    }
+
+    .responsive-form .aligned .form-row {
+        width: auto;
+    }
+
+    .responsive-form label {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-form label:after {
+        content: none;
+    }
+
+    .responsive-form .form-row input[type="submit"],
+    .responsive-form .form-row input[type="reset"],
+    .responsive-form .form-row input[type="button"],
+    .responsive-form .form-row button {
+        width: 100%;
+    }
+}

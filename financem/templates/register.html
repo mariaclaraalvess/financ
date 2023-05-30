@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'admin/css/login.css' %}" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <form method="post">
+        <legend>Cadastre-se</legend>
+        {% csrf_token %}
+        <div class="input-field">
+          <input id="id_username" type="text" name="username" placeholder="Usuário">
+        </div>
+        <div class="input-field">
+          <input id="id_password1" type="password" name="password1" placeholder="Senha">
+        </div>
+        <div class="input-field">
+          <input id="id_password2" type="password" name="password2" placeholder="Confirmar Senha">
+        </div>
+        {% if form.errors %}
+        <ul class="errorlist">
+          {% for field in form %}
+            {% for error in field.errors %}
+              <li>{{ field.label }}: {{ error }}</li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+        <input id="login" class="button button-login" type="submit" value="Próxima página">
+        <img class="logo" src="https://raw.githubusercontent.com/mariaclaraalvess/finance/main/porquinho.png%20(1).png" alt="Porquinho" style="margin-top: 10px">
+        <h2>finance</h2>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
