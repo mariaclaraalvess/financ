@@ -1,0 +1,10 @@
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mariaclaralvess$finance',
+        'USER': 'mariaclaralvess',
+        'PASSWORD': '1Doistres@',
+        'HOST': 'mariaclaralvess.mysql.pythonanywhere-services.com',
+        'PORT': '',
+    }
+}
