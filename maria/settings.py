@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--u)%34*!k_8j5%z)=*-u8s9ek--flu7rdl+w#l+058+n(2j-wm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mariaclaralvess.pythonanywhere.com']
 
 
 # Application definition
@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'maria.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'finance',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'mariaclaralvess$finance',
+        'USER': 'mariaclaralvess',
+        'PASSWORD': '1Doistres@',
+        'HOST': 'mariaclaralvess.mysql.pythonanywhere-services.com',
         'PORT': '',
     }
 }
@@ -130,9 +130,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
 STATIC_ROOT = os.path.join(BASE_DIR, 'maria', 'static')
 
 
